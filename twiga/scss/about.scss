@@ -1,5 +1,5 @@
 .about_title {
-  margin: 75px 0 0;
+  margin: 77px 0 0;
   color: #ffc845;
   padding: 0 0 0 85px;
   font-family: 'PT_Sans-Regular';
@@ -12,11 +12,11 @@
 
     &:before {
       position: absolute;
-      top: -15px;
-      left: -3px;
+      top: -21px;
+      left: -9px;
       display: block;
-      width: 50px;
-      height: 50px;
+      width: 59px;
+      height: 59px;
       border: 1px solid #e0e0e0;
       transform: rotate(45deg);
       content: '';
@@ -25,15 +25,16 @@
 }
 
 .about_desc {
-  margin: 15px 0 0;
+  margin: 17px 0 0;
   color: #fff;
   font-family: 'PT_Sans-Regular';
   font-size: 18px;
   padding: 0 0 0 85px;
+  line-height: 1.2;
 }
 
 .about_stats {
-  margin: 200px 0 0;
+  margin: 207px 0 0;
 }
 
 .about_stat {
@@ -86,24 +87,27 @@
 }
 
 .about_stat_title {
-  margin: 10px 0 0;
+  margin: 14px 0 0;
   color: #fff;
   font-family: 'PT_Sans-Narrow';
   font-size: 24px;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .about_achievements {
-  margin: 165px 0 0;
+  margin: 171px 0 0;
 }
 
 .about_achievement {
+  position: relative;
   display: inline-block;
   width: 145px;
   color: #fff;
   font-family: 'GothamPro';
   font-size: 20px;
   text-align: center;
+  line-height: 1;
 
   &:before {
     display: block;
@@ -116,14 +120,57 @@
     content: '';
   }
 
+  &:after {
+    position: absolute;
+    top: 59px;
+    right: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    content: '';
+  }
+
   span {
     display: block;
+    margin: 0 0 4px;
     font-size: 38px;
     font-weight: 700;
   }
 
   & + .about_achievement {
     margin-left: 140px;
+  }
+}
+
+.about_achievement__like {
+  &:after {
+    background: url(../img/icon/achievement-1.png);
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.about_achievement__projects {
+  &:after {
+    background: url(../img/icon/achievement-2.png);
+    width: 28px;
+    height: 25px;
+  }
+}
+
+.about_achievement__users {
+  &:after {
+    background: url(../img/icon/achievement-3.png);
+    width: 29px;
+    height: 28px;
+  }
+}
+
+.about_achievement__cups {
+  &:after {
+    background: url(../img/icon/achievement-4.png);
+    width: 25px;
+    height: 28px;
   }
 }
 
@@ -142,15 +189,17 @@
 }
 
 .about_column_list {
-  margin: 50px 0 0;
+  margin: 45px 0 0;
   color: #898989;
   font-family: 'PTMono';
   font-size: 14px;
   text-transform: uppercase;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .about_column_list_item {
+  cursor: pointer;
+
   &:hover {
     color: #fff;
   }
@@ -158,6 +207,6 @@
 
 .about_column__agencies {
   .about_column_list_item {
-    margin: 21px 0 0;
+    margin: 22px 0 0;
   }
 }

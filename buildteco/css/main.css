@@ -421,6 +421,7 @@ a {
   font-family: 'PFDinTextPro';
   font-size: 12px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .order_title {
@@ -473,6 +474,7 @@ a {
   font-family: 'PFDinTextPro';
   font-size: 16px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .order_contacts {
@@ -550,6 +552,7 @@ a {
 
 .feature p {
   margin: auto 0;
+  cursor: pointer;
 }
 
 .feature + .feature {
@@ -561,6 +564,17 @@ a {
   left: 20px;
   display: block;
   width: 36px;
+  content: '';
+}
+
+.feature.is-active:after {
+  position: absolute;
+  top: 0;
+  right: -6px;
+  bottom: 0;
+  display: block;
+  width: 10px;
+  background: #5dca88;
   content: '';
 }
 
@@ -633,6 +647,7 @@ a {
   color: #5db057;
   font-family: 'PFDinTextPro';
   font-size: 16px;
+  cursor: pointer;
 }
 
 .question {
@@ -704,6 +719,51 @@ a {
   color: #acadac;
 }
 
+.page_column {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  padding: 0 105px 0 94px;
+}
+
+.page_column:before {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: block;
+  width: 73px;
+  content: '';
+}
+
+.page_column__sale:before {
+  top: 10px;
+  height: 73px;
+  background: url(../img/icon/sale-icon.png);
+}
+
+.page_column__delivery:before {
+  height: 43px;
+  background: url(../img/icon/delivery-icon.png);
+}
+
+.page_column_title {
+  color: #010101;
+  font-family: 'PFDinTextPro';
+  font-size: 24px;
+}
+
+.page_column_title b {
+  font-weight: 700;
+}
+
+.page_column_text {
+  margin: 7px 0 0;
+  color: #747a7a;
+  font-family: 'Tahoma';
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .container {
   width: 1100px;
   margin: 0 auto;
@@ -741,7 +801,7 @@ a {
 }
 
 .page-section__products {
-  padding: 30px 0 75px;
+  padding: 30px 0 70px;
 }
 
 .page-section__order {
@@ -765,4 +825,14 @@ a {
 #map {
   width: 100%;
   height: 500px;
+}
+
+.page-section__special {
+  background: url(../img/icon/edge-pattern-top.png) top left repeat-x, url(../img/icon/edge-pattern-bottom.png) bottom left repeat-x;
+  background-color: #ebefef;
+  padding: 57px 0 67px;
+}
+
+input {
+  outline: none;
 }

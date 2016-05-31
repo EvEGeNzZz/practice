@@ -54,12 +54,14 @@
 .page-section__main {
   padding: 250px 0 170px;
   text-align: center;
+  background: url(../img/icon/background.png) center center no-repeat;
+  background-color: #0e1118;
 }
 
 .main_title {
-  margin: 140px 0 0;
+  margin: 133px 0 0;
   color: #ffc845;
-  font-family: 'FuturaLight-Regular';
+  font-family: 'FuturaLight';
   font-size: 30px;
   letter-spacing: 20px;
   text-transform: uppercase;
@@ -87,7 +89,11 @@
 }
 
 .page-section__about {
-  padding: 240px 0 150px;
+  padding: 238px 0 150px;
+
+  .page_title {
+    margin: 0 0 0 10px;
+  }
 }
 
 .page-section__contacts {

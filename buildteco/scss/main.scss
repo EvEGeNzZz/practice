@@ -14,6 +14,7 @@
 @import 'question';
 @import 'header';
 @import 'footer';
+@import 'page_column';
 
 .container {
   width: 1100px;
@@ -52,7 +53,7 @@
 }
 
 .page-section__products {
-  padding: 30px 0 75px;
+  padding: 30px 0 70px;
 }
 
 .page-section__order {
@@ -76,4 +77,14 @@
 #map {
   width: 100%;
   height: 500px;
+}
+
+.page-section__special {
+  background: url(../img/icon/edge-pattern-top.png) top left repeat-x, url(../img/icon/edge-pattern-bottom.png) bottom left repeat-x;
+  background-color: #ebefef;
+  padding: 57px 0 67px;
+}
+
+input {
+  outline: none;
 }

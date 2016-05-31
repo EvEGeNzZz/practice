@@ -28,7 +28,10 @@
 
   &:before {
     position: absolute;
+    right: 0;
     bottom: 0;
+    left: 0;
+    margin: auto;
     width: 42px;
     height: 36px;
     border-radius: 4px 4px 0 0;
@@ -86,6 +89,7 @@
   background: #fff;
 
   .container {
+    position: relative;
     padding: 190px 0 199px 515px;
   }
 
@@ -104,12 +108,21 @@
     color: #3e454c;
     padding-right: 20px;
   }
+
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -80px;
+    margin: auto;
+  }
 }
 
 .page_create {
   background: #3d5999;
 
   .container {
+    position: relative;
     padding: 265px 370px 250px 0;
   }
 
@@ -138,5 +151,13 @@
     padding: 0 100px 0 0;
     color: #fff;
     opacity: 0.3;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
   }
 }

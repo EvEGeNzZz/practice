@@ -20,6 +20,10 @@
     margin: 0 7px 0 0;
     content: '';
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .social_vk {
@@ -28,6 +32,10 @@
   &:before {
     width: 8px;
     background: url(../img/icon/share-vk.png);
+  }
+
+  &:hover {
+    background: #375375;
   }
 }
 
@@ -38,6 +46,10 @@
     width: 5px;
     background: url(../img/icon/share-fb.png);
   }
+
+  &:hover {
+    background: #2f4980;
+  }
 }
 
 .social_tw {
@@ -46,5 +58,9 @@
   &:before {
     width: 10px;
     background: url(../img/icon/share-tw.png);
+  }
+
+  &:hover {
+    background: #009ad6;
   }
 }

@@ -324,7 +324,7 @@ a {
 
 @font-face {
   font-family: 'FuturaLight';
-  src: url("../fonts/FuturaLight-Regular.ttf") format("truetype");
+  src: url("../fonts/FuturaLight.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -402,7 +402,7 @@ a {
 .contact {
   display: inline-block;
   width: 170px;
-  margin: 65px 0 0;
+  margin: 67px 0 0;
   padding: 0 0 0 25px;
   color: #fff;
 }
@@ -416,31 +416,116 @@ a {
 }
 
 .contact:nth-child(n+5) {
-  margin-top: 90px;
+  margin-top: 111px;
 }
 
 .contact_city {
+  position: relative;
   font-family: 'MyriadPro';
   font-size: 17px;
   font-weight: 600;
 }
 
+.contact_city:before {
+  position: absolute;
+  left: -22px;
+  top: -3px;
+  display: block;
+  width: 14px;
+  height: 18px;
+  background: url(../img/icon/city.png);
+  content: '';
+}
+
 .contact_adress, .contact_phone, .contact_mail {
+  position: relative;
   font-family: 'MyriadPro';
   font-size: 16px;
 }
 
+.contact_adress:before, .contact_phone:before, .contact_mail:before {
+  position: absolute;
+  left: -22px;
+  display: block;
+  content: '';
+}
+
 .contact_adress {
-  margin: 15px 0 0;
+  margin: 11px 0 0;
+  line-height: 1.3;
+}
+
+.contact_adress:before {
+  top: 2px;
+  bottom: 2px;
+  left: -15px;
+  width: 1px;
+  background: #e8432e;
 }
 
 .contact_phone {
-  margin: 20px 0 0;
+  margin: 25px 0 0;
   font-weight: 600;
 }
 
+.contact_phone:before {
+  width: 10px;
+  height: 12px;
+  background: url(../img/icon/phone.png);
+}
+
+.contact_mail {
+  margin: 2px 0 0;
+  text-decoration: underline;
+}
+
+.contact_mail:before {
+  top: 6px;
+  width: 12px;
+  height: 8px;
+  background: url(../img/icon/mail.png);
+}
+
+.contacts_btns {
+  display: inline-block;
+  margin: 106px 0 0 100px;
+  vertical-align: top;
+}
+
+.contacts_btn {
+  width: 370px;
+  border-radius: 4px;
+  font-family: 'MyriadPro';
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.contacts_btn.contacts_btn__presentation {
+  border: 1px dashed #707070;
+  padding: 15px 10px 14px;
+}
+
+.contacts_btn.contacts_btn__presentation:before {
+  position: relative;
+  bottom: 3px;
+  margin: 0 15px 0 0;
+  vertical-align: middle;
+  display: inline-block;
+  width: 27px;
+  height: 28px;
+  background: url(../img/icon/presentation.png);
+  content: '';
+}
+
+.contacts_btn.contacts_btn__offer {
+  margin: 20px 0 0;
+  padding: 18px 10px 20px;
+  background: #e8432e;
+}
+
 .about_title {
-  margin: 75px 0 0;
+  margin: 77px 0 0;
   color: #ffc845;
   padding: 0 0 0 85px;
   font-family: 'PT_Sans-Regular';
@@ -455,26 +540,27 @@ a {
 
 .about_title span:before {
   position: absolute;
-  top: -15px;
-  left: -3px;
+  top: -21px;
+  left: -9px;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 59px;
+  height: 59px;
   border: 1px solid #e0e0e0;
   transform: rotate(45deg);
   content: '';
 }
 
 .about_desc {
-  margin: 15px 0 0;
+  margin: 17px 0 0;
   color: #fff;
   font-family: 'PT_Sans-Regular';
   font-size: 18px;
   padding: 0 0 0 85px;
+  line-height: 1.2;
 }
 
 .about_stats {
-  margin: 200px 0 0;
+  margin: 207px 0 0;
 }
 
 .about_stat {
@@ -527,24 +613,27 @@ a {
 }
 
 .about_stat_title {
-  margin: 10px 0 0;
+  margin: 14px 0 0;
   color: #fff;
   font-family: 'PT_Sans-Narrow';
   font-size: 24px;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .about_achievements {
-  margin: 165px 0 0;
+  margin: 171px 0 0;
 }
 
 .about_achievement {
+  position: relative;
   display: inline-block;
   width: 145px;
   color: #fff;
   font-family: 'GothamPro';
   font-size: 20px;
   text-align: center;
+  line-height: 1;
 }
 
 .about_achievement:before {
@@ -558,14 +647,49 @@ a {
   content: '';
 }
 
+.about_achievement:after {
+  position: absolute;
+  top: 59px;
+  right: 0;
+  left: 0;
+  display: block;
+  margin: auto;
+  content: '';
+}
+
 .about_achievement span {
   display: block;
+  margin: 0 0 4px;
   font-size: 38px;
   font-weight: 700;
 }
 
 .about_achievement + .about_achievement {
   margin-left: 140px;
+}
+
+.about_achievement__like:after {
+  background: url(../img/icon/achievement-1.png);
+  width: 28px;
+  height: 28px;
+}
+
+.about_achievement__projects:after {
+  background: url(../img/icon/achievement-2.png);
+  width: 28px;
+  height: 25px;
+}
+
+.about_achievement__users:after {
+  background: url(../img/icon/achievement-3.png);
+  width: 29px;
+  height: 28px;
+}
+
+.about_achievement__cups:after {
+  background: url(../img/icon/achievement-4.png);
+  width: 25px;
+  height: 28px;
 }
 
 .about_column {
@@ -583,12 +707,16 @@ a {
 }
 
 .about_column_list {
-  margin: 50px 0 0;
+  margin: 45px 0 0;
   color: #898989;
   font-family: 'PTMono';
   font-size: 14px;
   text-transform: uppercase;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.about_column_list_item {
+  cursor: pointer;
 }
 
 .about_column_list_item:hover {
@@ -596,7 +724,7 @@ a {
 }
 
 .about_column__agencies .about_column_list_item {
-  margin: 21px 0 0;
+  margin: 22px 0 0;
 }
 
 .page {
@@ -641,12 +769,14 @@ a {
 .page-section__main {
   padding: 250px 0 170px;
   text-align: center;
+  background: url(../img/icon/background.png) center center no-repeat;
+  background-color: #0e1118;
 }
 
 .main_title {
-  margin: 140px 0 0;
+  margin: 133px 0 0;
   color: #ffc845;
-  font-family: 'FuturaLight-Regular';
+  font-family: 'FuturaLight';
   font-size: 30px;
   letter-spacing: 20px;
   text-transform: uppercase;
@@ -674,7 +804,11 @@ a {
 }
 
 .page-section__about {
-  padding: 240px 0 150px;
+  padding: 238px 0 150px;
+}
+
+.page-section__about .page_title {
+  margin: 0 0 0 10px;
 }
 
 .page-section__contacts {

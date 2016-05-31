@@ -18,7 +18,8 @@
   line-height: 1.4;
 
   p {
-    margin: auto 0
+    margin: auto 0;
+    cursor: pointer;
   }
 
   & + .feature {
@@ -31,6 +32,19 @@
     display: block;
     width: 36px;
     content: '';
+  }
+
+  &.is-active {
+    &:after {
+      position: absolute;
+      top: 0;
+      right: -6px;
+      bottom: 0;
+      display: block;
+      width: 10px;
+      background: #5dca88;
+      content: '';
+    }
   }
 }
 
@@ -113,4 +127,5 @@
   color: #5db057;
   font-family: 'PFDinTextPro';
   font-size: 16px;
+  cursor: pointer;
 }
